@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planos - Agência de Tráfego Digital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos - Agência de Tráfego Digital</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Nossos Pacotes de Gestão</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produtos.html">Nossos Planos</a></li>
-                <li><a href="sobre.html">Sobre a Agência</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="intro-produtos">
-            <h2>Escolha o plano ideal para o seu momento</h2>
-            <p>Trabalhamos com pacotes que se adaptam ao tamanho da sua verba de anúncios.</p>
-        </section>
+  <div class="bg-elements">
+    <span>ROI</span><span>CTR</span><span>ADS</span><span>%</span>
+    <span>CPC</span><span>META</span><span>↑</span><span>CPM</span>
+    <i></i><i></i><i></i>
+  </div>
 
-        <section id="tabela-planos">
-            <table border="1px" cellspacing="0" cellpadding="10px">
-                <thead>
-                    <tr>
-                        <th>NOME DO PLANO</th>
-                        <th>IMAGEM DESTAQUE</th>
-                        <th>PREÇO MENSAL</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Plano Starter</strong> (Ideal para negócios locais)</td>
-                        <td>
-                            <img src="img/Plano.Starter.png" 
-                                alt="Ícone Starter" 
-                                width="120px"
-                            >
-                        </td>
-                        <td>R$ 800,00 / mês</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Plano Escalada</strong> (E-commerces e Lançamentos)</td>
-                        <td>
-                            <img src="img/Ícone.Escalada.png" 
-                                alt="Ícone Escalada" 
-                                width="120px"
-                            >
-                        </td>
-                        <td>R$ 1.500,00 / mês</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="3"><em>*Os valores referem-se à nossa gestão técnica. O valor investido nas plataformas (Google/Meta) é pago pelo cliente.</em></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-    </main>
+  <header>
+    <a href="index.html" class="logo">Agência<span>Digital</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Nossos Planos</a></li>
+        <li><a href="sobre.html">Sobre a Agência</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <footer>
-        <hr />
-        <p>&copy; 2026 Agência Digital de Tráfego Pago. Todos os direitos reservados.</p>
-    </footer>
+  <main>
+
+    <section id="intro-produtos">
+      <small class="section-tag">● NOSSOS PACOTES</small>
+      <h2>Escolha o plano ideal para o seu momento.</h2>
+      <p>Trabalhamos com pacotes que se adaptam ao tamanho da sua verba de anúncios.</p>
+    </section>
+
+    <section id="tabela-planos">
+      <div class="planos-grid">
+
+        <div class="plano-card">
+          <img src="img/Plano_Starter.png" alt="Ícone Plano Starter">
+          <h3>Plano Starter</h3>
+          <p class="subtitulo">Ideal para negócios locais</p>
+          <p class="preco">R$ 800 <small>/ mês</small></p>
+          <a href="contato.html" class="btn">Quero este plano</a>
+        </div>
+
+        <div class="plano-card">
+          <img src="img/Ícone_Escalada.png" alt="Ícone Plano Escalada">
+          <h3>Plano Escalada</h3>
+          <p class="subtitulo">E-commerces e Lançamentos</p>
+          <p class="preco">R$ 1.500 <small>/ mês</small></p>
+          <a href="contato.html" class="btn">Quero este plano</a>
+        </div>
+
+      </div>
+
+      <p class="nota-rodape">
+        <em>* Os valores referem-se à nossa gestão técnica. O valor investido nas plataformas (Google/Meta) é pago pelo cliente.</em>
+      </p>
+    </section>
+
+  </main>
+
+  <a href="https://wa.me/5585900000000" target="_blank" class="whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path d="M16 3C8.8 3 3 8.7 3 15.7c0 2.5.7 4.8 2.1 6.9L3 29l6.6-2.1A13 13 0 0 0 16 28.7c7.2 0 13-5.7 13-13S23.2 3 16 3zm0 23.5c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1.3 1.3-3.9-.3-.4a10.7 10.7 0 0 1-1.7-5.7C5.3 10.2 10.1 5.5 16 5.5s10.7 4.7 10.7 10.5S21.9 26.5 16 26.5zm6-8.5c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.9 1.1-1 1.3-.2.2-.4.2-.7.1-2-.8-3.3-2.3-3.7-2.8-.2-.3 0-.5.2-.7.2-.2.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.7-.5-.6-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.2 1.4 3.4c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2.1.1.6-.1 2-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.3z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <footer>
+    <a href="index.html" class="logo">Agência<span>Digital</span></a>
+    <p>Tráfego Pago · Google Ads · Meta Ads</p>
+    <p>&copy; 2026 Agência Digital de Tráfego Pago. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
